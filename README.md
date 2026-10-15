@@ -38,3 +38,15 @@ dotnet run --project src/OnlineStoreOrder/OnlineStoreOrder.csproj
 - `tests/OnlineStoreOrder.Tests` — автоматические тесты.
 
 В `Order` и `CheckoutService` нет проверок конкретного типа товара: характеристики и стоимость берутся через полиморфный API `Product`.
+
+## Публикация на GitHub
+
+После создания пустого репозитория на GitHub выполните в корне проекта:
+
+```powershell
+git remote add origin https://github.com/<username>/OnlineStoreOrder.git
+git branch -M main
+git push -u origin main
+```
+
+Если репозиторий уже подключён, достаточно выполнить `git push`.
